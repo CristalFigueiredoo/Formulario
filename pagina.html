@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pagina.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <section>
+
+        <h2>Respostas Salvas:</h2>
+
+    <div id="Texto">
+        <div>CEP:</div>
+        <diV id="rcep"></diV>
+
+        <div>CPF:</div>
+        <diV id="rcpf"></diV>
+
+        <div>CNPJ:</div>
+        <diV id="rcnpj"></diV>
+
+        <div>Telefone:</div>
+        <diV id="rtel"></diV>
+    </div>
+    </section>
+
+    <script>
+        addEventListener("DOMContentLoaded", () => {
+
+            var recebercep = localStorage.getItem("cep")
+            document.getElementById("rcep").innerHTML = recebercep
+
+            var recebercpf = localStorage.getItem("cpf")
+            document.getElementById("rcpf").innerHTML = recebercpf
+
+            var recebercnpj = localStorage.getItem("cnpj")
+            document.getElementById("rcnpj").innerHTML = recebercnpj
+
+            var recebertel = localStorage.getItem("tel")
+            document.getElementById("rtel").innerHTML = recebertel
+
+            var recebercodigo = localStorage.getItem("codigo")
+            document.getElementById("rcodigo").innerHTML = recebercodigo
+
+        })
+    </script>
+</body>
+
+</html>

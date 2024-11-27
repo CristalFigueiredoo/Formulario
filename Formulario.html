@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+    <title>Formulario</title>
+</head>
+
+<section>
+    <h2>Formulario</h2>
+    </div>
+    <section>
+        <p>
+            <label for="nome"> <span> Nome:</span> </label>
+            <input type="text" placeholder="" id="nome" oninput=mascara_nome()>
+        </p>
+        <p>
+            <label for="endereco"> <span> Endereço: </span> </label>
+            <input type="text" id="endereco" oninput=mascara_endereco() maxlength="14">
+        </p>
+        <p><label for="cep"> <span> CEP: </span></label>
+            <input type="text" id="cep" placeholder="xx.xxx-xxx" oninput=mascara_cep() maxlength="10">
+        </p>
+        <p><label for="cpf"> <span>CPF:</span></label>
+            <input type="text" id="cpf" placeholder="xxx.xxx.xxx-xx" oninput=mascara_cpf() maxlength="12">
+        </p>
+        <P><label for="tel"><span>Telefone:</span></label>
+            <input type="tel" placeholder="(31)99999-9999" id="telefone" oninput=mascara_tel() maxlength="14">
+        </P>
+
+        <p><label for="cnpj"><span>CNPJ:</span></label>
+            <input type="text" id="cnpj" placeholder="XX.XXX.XXX/0001-XX" oninput=mascara_cnpj() maxlength="18">
+        </p>
+        <p>
+            <label for="codigo"> <span>Codigo:</span></label>
+            <input type="text" placeholder="xx_xx//xxx-xxx.9.xxx" id="codigo" oninput=mascara_codigo() maxlength="20">
+        </p>
+        <p>
+        <menu>
+            <button id="abrir" onclick="abrirFechar()"> Confirmar </button>
+        </menu>
+        </p>
+        </div>
+    </section>
+
+    <body>
+
+        <dialog id="modal">
+            <div class="modal-header">
+                <dialog open id="modal-body">
+                    <form method="dialog">
+                        <label for="Confirmação" id=""> Envio Confirmado.</label>
+                        <p>
+                            <button id="fechar" onclick="abrirFechar()"> <a href="pagina.html"> fechar</a> </button>
+                        </p>
+                </dialog>
+                </select>
+                <script src="Script.js"></script>
+    </body>
+
+</html>
